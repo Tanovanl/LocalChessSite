@@ -29,7 +29,7 @@ function loadChessPieces(){
         const col = $chessCell.getAttribute('data-col');
         const piece = getPiece(row, col);
         if(piece){
-            $chessCell.innerHTML = `<img src="images/${piece}.png" alt="${piece}">`;
+            $chessCell.innerHTML = `<img src="assets/media/${piece}.png" alt="${piece}">`;
         }
     });
 }
