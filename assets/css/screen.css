@@ -10,6 +10,7 @@ body {
     background-color: #000;
 }
 
+
 .chessboard {
     display: grid;
     grid-template-columns: repeat(8, 50px);
@@ -31,4 +32,8 @@ body {
 
 .odd {
     background-color: #ddd;
+}
+
+.possible-move {
+    background-color: #0f0;
 }
