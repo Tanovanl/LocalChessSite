@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+.black {
+    background-color: #000;
+}
+
 .chessboard {
     display: grid;
     grid-template-columns: repeat(8, 50px);

@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', init);
 function init() {
     loadChessBoard();
     loadChessPieces();
+    addEventListenersToPieces();
 }
+
 
 function loadChessBoard(){
     const $chessboard = document.querySelector('#chessboard');
@@ -29,7 +31,7 @@ function loadChessPieces(){
         const col = $chessCell.getAttribute('data-col');
         const piece = getPiece(row, col);
         if(piece){
-            $chessCell.innerHTML = `<img src="assets/media/${piece}.png" alt="${piece}">`;
+            $chessCell.innerHTML = `<img src="assets/media/${piece}.png" alt="${piece}" data-row="${row}" data-col="${col}"">`;
         }
     });
 }
